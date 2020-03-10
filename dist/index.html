@@ -1,0 +1,179 @@
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+</head>
+
+
+
+<body>
+  <blockquote class="blockquote" style="padding: 6%; font-weight:100; text-transform: uppercase; background: linear-gradient(130deg, #010b31 10%, #192b6e 60%, #264c01 10%, #257701 80%); color: white; text-align:center;">
+    <svg class="animated rollIn" id="ball" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="max-width:125px;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M15,0C6.7,0,0,6.7,0,15c0,3.9,1.5,7.5,4,10.1l0.1,0.2l0.1,0.1l0,0C7,28.2,10.8,30,15,30c8.3,0,15-6.7,15-15
+	S23.3,0,15,0z M28.4,10.8l-2.5-0.7L23,5.4V3.5C25.5,5.3,27.4,7.8,28.4,10.8z M19.5,23.9l-3.4-2.6l1.8-4.8l5.2-0.4l0.9,5.2L19.5,23.9
+	z M15.1,21l-6.3,1l-2.7-5l2.7-5l4.5-0.4l3.6,4.6L15.1,21z M11.6,4.1l4.2,2.1l-2.6,4.3L8.8,11L7.1,7.6L11.6,4.1z M22,2.9
+	C22,2.9,22,3,22,2.9V5l-5.4,0.4L12,3.2V1.3C13,1.1,14,1,15,1C17.6,1,20,1.7,22,2.9z M3.2,7.5l3,0.4L8,11.4l-2.8,5l-4,0.4
+	C1.1,16.3,1,15.7,1,15C1,12.3,1.8,9.7,3.2,7.5z M7.1,26.5L8.8,23l6.5-0.9l3.6,2.7L18,28.7c-1,0.2-2,0.3-3.1,0.3
+	C12,29,9.3,28.1,7.1,26.5z M27.6,21h-0.1h-2.6L24,15.6l1.8-4.5l2.9,0.8c0.2,1,0.4,2,0.4,3.1C29,17.2,28.5,19.2,27.6,21z"/>
+</svg>
+      <h1>Football Data Org</h1>
+      <p>Consult your Matches Information here.</p>
+  </blockquote>
+
+<div class="container">
+<div style="width:50%; margin:auto; padding: 1em;">
+<button class="btn btn-outline-secondary " id="competitions" type="button">Competitions</button>
+<button class="btn btn-outline-secondary " id="matches" type="button">Matches 2018</button>
+<button class="btn btn-outline-secondary " id="teams" type="button">Teams</button>
+<button class="btn btn-outline-secondary " id="areas" type="button">Areas</button>
+<button class="btn btn-outline-secondary " id="players" type="button">Players</button>
+</div>
+
+
+<table id="competitions_table" class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Area</th>
+      <th scope="col">Name</th>
+      <th scope="col">Plan</th>
+      <th scope="col">Last Updated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="matches_table" class="table" style="width"100%;">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Home Team</th>
+      <th scope="col">Score</th>
+      <th scope="col">Away Team</th>
+      <th scope="col">Score</th>
+      <th scope="col">Winner</th>
+      <th scope="col">Last Updated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="teams_table" class="table" style="width"100%;">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Area</th>
+      <th scope="col">Name</th>
+      <th scope="col">ShortName</th>
+      <th scope="col">Venue</th>
+      <th scope="col">Last Updated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="areas_table" class="table" style="width"100%;">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Area</th>
+      <th scope="col">Country Code</th>
+      <th scope="col">Continent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="players_table_div">
+  <div class="card">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <div class="form-group row">
+            <label for="validationTooltip01">Type in the Player Id</label>
+          <input type="text" class="form-control" id="player_id" ></input>
+          </div>
+          <div class="form-group row">
+            <button class="btn btn-outline-secondary " id="find_player" type="button">Get Player Information</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<table id="players_table" class="table" style="width"100%;">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Nationality</th>
+      <th scope="col">Number</th>
+      <th scope="col">Position</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+  <h5 class="card-title" id="contentuser"></h5>
+
+<img></img>
+</div>
+</body>
+
+<style>
+  #tbody{
+    width:100%;
+  }
+  </style>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sweetalert2.all.min.js"></script>
+<script src="jq.js"></script>
